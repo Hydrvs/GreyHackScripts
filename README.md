@@ -1,2 +1,2 @@
 # gh
-GreyHack game scripts
+GreyHack game scripts.
