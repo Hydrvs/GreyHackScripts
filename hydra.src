@@ -1,0 +1,33 @@
+//Hydra 0.1 by Hyd
+
+tipo = user_input("Exploit type [m:Mail,b:Bank,p:Pass]: ")
+router = user_input("Public IP: ")
+port = user_input("Port: ").to_int
+
+metaxploit = include_lib("metaxploit")
+net_session = metaxploit.net_use( router, port )
+metaLib = net_session.dump_libs
+namex = metaLib.lib_name
+print(namex)
+
+if namex == "libhttp.so" then
+	
+  result = metaLib.overflow("0x74F9F33C", "gionx")
+  
+	if tipo == "p" then
+		file = result.File("/etc/passwd")
+		print(file.content)
+	else if tipo == "m" then
+		userx = user_input("Target: ")
+		path = ("/home/" + userx + "/Config/Mail.txt")
+		file = result.File(path)
+		print(file.content)
+	else if tipo == "b" then
+		userx = user_input("Target: ")
+		path = ("/home/" + userx + "/Config/Bank.txt")
+		file = result.File(path)
+		print(file.content)
+		end if	
+else
+	result = print("No lib found!")
+end if
