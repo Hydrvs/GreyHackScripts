@@ -1,3 +1,10 @@
+//Grants access to the path: /lib and prints their contents
+//Usage[local]
+//Creds[nonroot]
+//Target[libssh.so>=1.0.1]
+//Required[active connection]
+
+
 metaxploit = include_lib("metaxploit")
 if not metaxploit then exit("Error: Missing metaxploit library")
 metaLib = metaxploit.load("/lib/libssh.so")

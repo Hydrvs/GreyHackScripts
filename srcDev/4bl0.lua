@@ -1,3 +1,10 @@
+//Prints the contents of the file /home/user/Mail.txt of all users in the computer
+//Usage[local]
+//Creds[nonroot]
+//Target[libssh.so>=1.0.1]
+//Required[1 user registered|active connection|user logged]
+
+
 metaxploit = include_lib("metaxploit")
 if not metaxploit then exit("Error: Missing metaxploit library")
 metaLib = metaxploit.load("/lib/libssh.so")
