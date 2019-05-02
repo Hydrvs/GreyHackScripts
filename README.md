@@ -1,2 +1,2 @@
-# Greyhack Anonymous Team
+# GreyHack Anonymous Team
 GreyHack game scripts.
