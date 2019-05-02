@@ -19,11 +19,3 @@ if not homeFolder then exit("Error: file not found")
 if not homeFolder.has_permission("r") then exit("Error: can't read file contents. Permission deniend")
 print(" ")
 print(homeFolder.content)
-
-
-		
-		
-
-
-
-

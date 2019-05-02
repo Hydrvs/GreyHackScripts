@@ -1,4 +1,4 @@
-//Hydra 0.1 by Hyd
+//Hydra 0.2 by Hyd
 
 choice = function(str)
 	if str == "p" then
@@ -25,7 +25,7 @@ metaxploit = include_lib("metaxploit")
 net_session = metaxploit.net_use( router, port )
 metaLib = net_session.dump_libs
 namex = metaLib.lib_name
-print(namex)
+print("Library found: " + namex)
 
 if namex == "libhttp.so" then
 	
