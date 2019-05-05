@@ -40,7 +40,7 @@ else
 		for subFile in subFiles
 			nameFile = subFile.name
 			data = "file: " + nameFile 
-			data = data + "\n" + "owner: " + result.owner + "\n" + "permissions: " + result.permissions//define our data, each column data separated by a space
+			data = data + "\n" + "owner: " + result.owner + "\n" + "permissions: " + result.permissions
 			print(format_columns(data))		
 		end for
 	end if
@@ -62,7 +62,7 @@ else
 		for subFile in subFiles
 			nameFile = subFile.name
 			data = "file: " + nameFile 
-			data = data + "\n" + "owner: " + result.owner + "\n" + "permissions: " + result.permissions//define our data, each column data separated by a space
+			data = data + "\n" + "owner: " + result.owner + "\n" + "permissions: " + result.permissions
 			print(format_columns(data))		
 		end for
 	end if
@@ -84,7 +84,7 @@ else
 		for subFile in subFiles
 			nameFile = subFile.name
 			data = "file: " + nameFile 
-			data = data + "\n" + "owner: " + result.owner + "\n" + "permissions: " + result.permissions//define our data, each column data separated by a space
+			data = data + "\n" + "owner: " + result.owner + "\n" + "permissions: " + result.permissions
 			print(format_columns(data))		
 		end for
 	end if
@@ -107,7 +107,7 @@ else
 		for subFile in subFiles
 			nameFile = subFile.name
 			data = "file: " + nameFile 
-			data = data + "\n" + "owner: " + result.owner + "\n" + "permissions: " + result.permissions//define our data, each column data separated by a space
+			data = data + "\n" + "owner: " + result.owner + "\n" + "permissions: " + result.permissions
 			print(format_columns(data))		
 		end for
 	end if
@@ -130,7 +130,7 @@ else
 		for subFile in subFiles
 			nameFile = subFile.name
 			data = "file: " + nameFile 
-			data = data + "\n" + "owner: " + result.owner + "\n" + "permissions: " + result.permissions//define our data, each column data separated by a space
+			data = data + "\n" + "owner: " + result.owner + "\n" + "permissions: " + result.permissions
 			print(format_columns(data))		
 		end for
 	end if
@@ -153,7 +153,7 @@ else
 		for subFile in subFiles
 			nameFile = subFile.name
 			data = "file: " + nameFile 
-			data = data + "\n" + "owner: " + result.owner + "\n" + "permissions: " + result.permissions//define our data, each column data separated by a space
+			data = data + "\n" + "owner: " + result.owner + "\n" + "permissions: " + result.permissions
 			print(format_columns(data))		
 		end for
 	end if
