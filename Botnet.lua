@@ -80,10 +80,10 @@ if codefile != null then codefile.delete
 //log delete
 log = ssh.host_computer.File("/var/system.log")
 if log == null then 
-	print("file not found.")
+	print()
 else 
 	if not log.has_permission("w") then
-		print("rm: permission denied")
+		print()
 	else
 		log.delete
 		print()
